@@ -10,11 +10,10 @@ class TVet
 		const double arrayLimit = 100;
 
 	// Properties
-	public:
+	private:
 		std::vector<double> numVectorArray;
 		std::vector<double> cleanVectorArray;
 		double sum;
-	private:	
 		double highestElement;
 		double lowestElement;
 		double newElement;
@@ -25,6 +24,7 @@ class TVet
 	public:	
 		double getHighest() const { return this->highestElement; }
 		double getLowest() const { return this->lowestElement; }
+	private:
 		void setHighest(double inputDouble) { this->highestElement = inputDouble; }
 		void setLowest(double inputDouble) { this->lowestElement = inputDouble; }
 
